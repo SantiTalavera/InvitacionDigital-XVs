@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morena - Mis XV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Entrance Overlay -->
+    <div id="entrance-overlay">
+        <div class="entrance-content">
+            <h1 style="color: #000000">Morena</h1>
+            <p style="color: #000000">Mis XV</p>
+            <button id="enter-btn">INGRESAR</button>
+        </div>
+    </div>
+
+    <!-- Music Control -->
+    <div id="music-control" class="hidden">
+        <button id="music-btn" aria-label="Reproducir música">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <audio id="bg-music" loop>
+            <source src="assets/audio/musica.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Hero Section (Image Only - NO TEXT) -->
+    <section id="hero" class="fade-in">
+        <div class="hero-content">
+            <div class="arrow-down-hero">
+                <i class="fas fa-chevron-down bounce"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo / Intro Section (XV Design) -->
+    <section id="intro-logo" class="reveal">
+        <div class="xv-wrapper">
+            <div class="xv-bg">XV</div>
+            <h1 class="name-overlay">Morena</h1>
+        </div>
+        <p class="intro-sub">13 . 03 . 2026</p>
+        <button class="btn primary-btn"
+            onclick="window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&text=Morena+Astuto+-+XV&dates=20260313T210000/20260314T050000&details=Celebraci%C3%B3n+de+mis+15+A%C3%B1os+en+Janos+La+Casona&location=Janos+La+Casona,+Av.+60+y+132,+Los+Hornos', '_blank')">AGENDAR
+            LA FECHA</button>
+    </section>
+
+    <!-- Photo Divider 1 -->
+    <div class="photo-divider">
+        <img src="assetsimg/uploaded_image_0_1768238504381.png" alt="Morena">
+    </div>
+
+    <!-- Countdown Section -->
+    <section id="countdown-section" class="reveal">
+        <p class="missing-text">FALTAN...</p>
+        <div id="countdown">
+            <div class="time-unit"><span id="days">00</span><label>DÍAS</label></div>
+            <div class="time-unit">:</div>
+            <div class="time-unit"><span id="hours">00</span><label>HS</label></div>
+            <div class="time-unit">:</div>
+            <div class="time-unit"><span id="minutes">00</span><label>MIN</label></div>
+            <div class="time-unit">:</div>
+            <div class="time-unit"><span id="seconds">00</span><label>SEG</label></div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="container reveal">
+        <div class="icon-header"><i class="fas fa-glass-cheers"></i></div>
+        <h2 style="color: #122562;">FIESTA</h2>
+        <h1 class="cursive-title">Janos La Casona</h1>
+        <p class="address">Av. 60 y 132, Los Hornos</p>
+        <p class="time-text">21:00 HS</p>
+
+        <button class="btn primary-btn"
+            onclick="window.open('https://www.google.com/maps/search/?api=1&query=Janos+La+Casona+Av+60+y+132+Los+Hornos', '_blank')">VER
+            UBICACIÓN</button>
+    </section>
+
+    <!-- Photo Divider 2 -->
+    <!-- Photo Divider 2 (Slider) -->
+    <!-- Photo Divider 2 (Slider) -->
+    <div class="slider-wrapper">
+        <div class="photo-slider">
+            <img src="assetsimg/Morena_ (54).jpg" alt="Morena 1">
+            <img src="assetsimg/Morena_ (115).jpg" alt="Morena 2">
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="swipe-hint"><i class="fas fa-hand-pointer"></i></div>
+    </div>
+
+    <!-- Suggested Songs -->
+    <section id="music-suggestions" class="reveal">
+        <div class="icon-header"><i class="fas fa-music"></i></div>
+        <h2>¡QUE NO FALTE TU TEMA FAVORITO!</h2>
+        <p>Ayudame con la playlist de canciones para la fiesta</p>
+        <button class="btn transparent-btn"
+            onclick="document.getElementById('song-form').classList.toggle('hidden')">SUGERIR CANCIÓN</button>
+
+        <form id="song-form" class="hidden slide-down">
+            <input type="text" placeholder="Nombre de la canción">
+            <button type="submit" class="btn small-btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Photo Divider 3 -->
+    <!-- Photo Divider 3 (Slider) -->
+    <!-- Photo Divider 3 (Slider) -->
+    <div class="slider-wrapper">
+        <div class="photo-slider">
+            <img src="assetsimg/Morena_ (224).jpg" alt="Morena 3">
+            <img src="assetsimg/Morena_ (289).jpg" alt="Morena 4">
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="swipe-hint"><i class="fas fa-hand-pointer"></i></div>
+    </div>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="container reveal">
+        <div class="icon-header"><i class="fas fa-envelope-open-text"></i></div>
+        <h2>CONFIRMACIÓN DE</h2>
+        <h1 class="cursive-title">Asistencia</h1>
+        <p>Por favor, no te olvides de confirmar tu asistencia antes del 1 de Marzo.</p>
+
+        <button class="btn primary-btn"
+            onclick="document.getElementById('rsvp-modal').classList.remove('hidden')">CONFIRMAR ACÁ</button>
+    </section>
+
+    <!-- Dress Code -->
+    <section id="dresscode" class="reveal">
+        <div class="icon-header"><i class="fas fa-tshirt"></i></div>
+        <h2>DRESS CODE</h2>
+        <p class="dress-style">Elegante Sport</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Te espero!</p>
+    </footer>
+
+    <!-- RSVP Modal -->
+    <div id="rsvp-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn"
+                onclick="document.getElementById('rsvp-modal').classList.add('hidden')">&times;</span>
+            <h2>Confirmar Asistencia</h2>
+            <form id="rsvp-form-modal">
+                <input type="text" name="name" placeholder="Nombre y Apellido" required>
+                <select name="attendance">
+                    <option value="yes">Sí, asistiré</option>
+                    <option value="no">No podré asistir</option>
+                </select>
+                <input type="text" name="food" placeholder="¿Restricciones alimentarias?">
+                <button type="submit" class="btn primary-btn">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
