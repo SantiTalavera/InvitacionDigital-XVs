@@ -104,6 +104,45 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
+    // Gift alias copy
+    const giftCopyBtn = document.getElementById('gift-copy-btn');
+    const giftCopyStatus = document.getElementById('gift-copy-status');
+    if (giftCopyBtn) {
+        const aliasText = 'morenaxv.mp';
+        giftCopyBtn.addEventListener('click', async () => {
+            let copied = false;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                try {
+                    await navigator.clipboard.writeText(aliasText);
+                    copied = true;
+                } catch (err) {
+                    copied = false;
+                }
+            }
+
+            if (!copied) {
+                const tempInput = document.createElement('input');
+                tempInput.value = aliasText;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                tempInput.setSelectionRange(0, aliasText.length);
+                try {
+                    copied = document.execCommand('copy');
+                } catch (err) {
+                    copied = false;
+                }
+                document.body.removeChild(tempInput);
+            }
+
+            if (giftCopyStatus) {
+                giftCopyStatus.textContent = copied ? 'Alias copiado' : 'No se pudo copiar';
+                setTimeout(() => {
+                    giftCopyStatus.textContent = '';
+                }, 2500);
+            }
+        });
+    }
+
     // Slider Dot Logic
     const sliders = document.querySelectorAll('.photo-slider');
     sliders.forEach(slider => {

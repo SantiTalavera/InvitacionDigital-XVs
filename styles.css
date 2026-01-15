@@ -403,6 +403,52 @@ h2 {
     margin-top: 1rem;
 }
 
+/* Gift Transfer */
+#gift {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#gift .gift-text {
+    max-width: 520px;
+    margin: 0 auto 1.5rem;
+    font-size: 1rem;
+}
+
+#gift .gift-alias {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#gift .gift-copy-btn {
+    margin-top: 1rem;
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+#gift .gift-copy-btn:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+#gift .gift-copy-status {
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
 /* Dress Code */
 #dresscode {
     border-top: 1px solid #eee;
