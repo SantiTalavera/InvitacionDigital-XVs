@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #122562;
+    --primary-color: #FFD1DC ;
     /* Soft Rose Pink */
-    --primary-dark: #68749d;
+    --primary-dark: #d5c3d7;
     --background-pink: #2e2e2e;
     /* The solid pink background color */
     --text-color: #2e2e2e;
@@ -47,7 +47,7 @@ body {
 
 .primary-btn {
     background-color: var(--primary-color);
-    color: white;
+    color: black;
     box-shadow: 0 4px 10px rgba(214, 156, 165, 0.4);
 }
 
@@ -105,7 +105,7 @@ body {
 
 #enter-btn {
     background: var(--primary-color);
-    color: white;
+    color: black;
     border: none;
     padding: 10px 30px;
     margin-top: 30px;
@@ -128,7 +128,7 @@ body {
     height: 40px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.9);
-    color: var(--primary-color);
+    color:black;
     border: none;
     font-size: 1rem;
     cursor: pointer;
@@ -179,7 +179,7 @@ body {
 .xv-bg {
     font-family: var(--font-heading);
     font-size: 12rem;
-    color: #122562;
+    color: #FFD1DC ;
     /* Very light pink */
     position: absolute;
     top: 50%;
@@ -406,7 +406,7 @@ h2 {
 /* Gift Transfer */
 #gift {
     background-color: var(--primary-color);
-    color: white;
+    color: black;
 }
 
 #gift .gift-text {
@@ -427,7 +427,7 @@ h2 {
     border-radius: 30px;
     border: 2px solid white;
     background: transparent;
-    color: white;
+    color: black;
     font-size: 0.8rem;
     letter-spacing: 2px;
     text-transform: uppercase;
