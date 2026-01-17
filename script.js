@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const giftCopyBtn = document.getElementById('gift-copy-btn');
     const giftCopyStatus = document.getElementById('gift-copy-status');
     if (giftCopyBtn) {
-        const aliasText = 'morenaxv.mp';
+        const aliasText = 'moreastuto.xv';
         giftCopyBtn.addEventListener('click', async () => {
             let copied = false;
             if (navigator.clipboard && navigator.clipboard.writeText) {
